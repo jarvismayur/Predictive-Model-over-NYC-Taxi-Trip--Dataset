@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="dist_sq <= 0.02\nsquared_error = 0.635\nsamples = 486214\nvalue = 6.466", fillcolor="#eeac7d"] ;
+1 [label="dist_sq <= 0.01\nsquared_error = 0.485\nsamples = 231651\nvalue = 5.949", fillcolor="#f0b68c"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="dist_sq <= 0.003\nsquared_error = 0.684\nsamples = 71095\nvalue = 5.498", fillcolor="#f2be99"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+452 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 452 ;
+4383 [label="dist_sq <= 0.014\nsquared_error = 0.267\nsamples = 160556\nvalue = 6.148", fillcolor="#efb286"] ;
+1 -> 4383 ;
+4384 [label="(...)", fillcolor="#C0C0C0"] ;
+4383 -> 4384 ;
+9103 [label="(...)", fillcolor="#C0C0C0"] ;
+4383 -> 9103 ;
+14280 [label="dist_sq <= 0.048\nsquared_error = 0.305\nsamples = 254563\nvalue = 6.937", fillcolor="#eca36f"] ;
+0 -> 14280 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+14281 [label="dist_sq <= 0.03\nsquared_error = 0.206\nsamples = 164295\nvalue = 6.709", fillcolor="#eda876"] ;
+14280 -> 14281 ;
+14282 [label="(...)", fillcolor="#C0C0C0"] ;
+14281 -> 14282 ;
+19651 [label="(...)", fillcolor="#C0C0C0"] ;
+14281 -> 19651 ;
+24426 [label="dist_sq <= 0.108\nsquared_error = 0.219\nsamples = 90268\nvalue = 7.351", fillcolor="#eb9c63"] ;
+14280 -> 24426 ;
+24427 [label="(...)", fillcolor="#C0C0C0"] ;
+24426 -> 24427 ;
+28100 [label="(...)", fillcolor="#C0C0C0"] ;
+24426 -> 28100 ;
+}
